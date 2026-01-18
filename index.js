@@ -56,7 +56,7 @@ app.use('/vendor', vendorRoutes); // Middleware to parse JSON bodies
 app.use('/firm', firmRoutes);
 app.use('/product', productRoutes);
 
-app.use('/home', (req, res) => {
+app.use('/', (req, res) => {
   res.send('Welcome to the Home Page');
 });
 
